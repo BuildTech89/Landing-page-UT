@@ -2,10 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="#projects" class="header__nav-link">Projects</a></li>
+                <li class="header__nav-item"><a href="#company" class="header__nav-link">Company</a></li>
+                <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home" id="home">
+            <h1 class="home__title">Welcome to Our Company</h1>
+            <p class="home__description">We are dedicated to delivering the best services to our clients.</p>
+            <button class="home__button" onclick="playVideo()">Watch Video</button>
+            <video class="home__video" id="homeVideo" controls>
+                <source src="your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="projects__title">Our Projects</h2>
+            <div class="projects__grid">
+                <div class="projects__item">
+                    <h3 class="projects__item-title">Project One</h3>
+                    <p class="projects__item-description">Description of project one.</p>
+                </div>
+                <div class="projects__item">
+                    <h3 class="projects__item-title">Project Two</h3>
+                    <p class="projects__item-description">Description of project two.</p>
+        
+                </div>
+                <div class="projects__item">
+                    <h3 class="projects__item-title">Project Three</h3>
+                    <p class="projects__item-description">Description of project three.</p>
+                </div>
+            </div>
+        </section>
+        <section class="company" id="company">
+            <h2 class="company__title">Our Team</h2>
+            <div class="company__team">
+                <div class="company__member">
+                    <img src="images/person1.jpg" alt="Person 1" class="company__member-photo">
+                    <h3 class="company__member-name">Person One</h3>
+                    <p class="company__member-description">Description of person one.</p>
+                </div>
+                <div class="company__member">
+                    <img src="images/person2.jpg" alt="Person 2" class="company__member-photo">
+                    <h3 class="company__member-name">Person Two</h3>
+                    <p class="company__member-description">Description of person two.</p>
+                </div>
+                <div class="company__member">
+                    <img src="images/person3.jpg" alt="Person 3" class="company__member-photo">
+                    <h3 class="company__member-name">Person Three</h3>
+                    <p class="company__member-description">Description of person three.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__contact">
+            <p>Contact us: info@company.com | +123 456 7890</p>
+        </div>
+        <div class="footer__social">
+            <a href="#" class="footer__social-icon">Facebook</a>
+            <a href="#" class="footer__social-icon">Twitter</a>
+            <a href="#" class="footer__social-icon">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
 </html>

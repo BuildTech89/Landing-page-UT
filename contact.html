@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo.png" alt="Company Logo">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Home</a></li>
+                <li class="header__nav-item"><a href="index.html#projects" class="header__nav-link">Projects</a></li>
+                <li class="header__nav-item"><a href="index.html#company" class="header__nav-link">Company</a></li>
+                <li class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="contact">
+            <div class="contact__info">
+                <h2 class="contact__title">Contact Information</h2>
+                <p class="contact__item"><strong>Phone:</strong> +123 456 7890</p>
+                <p class="contact__item"><strong>Email:</strong> info@company.com</p>
+                <p class="contact__item"><strong>Address:</strong> 1234 Street Name, City, Country</p>
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_URL" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="contact__form-container">
+                <h2 class="contact__title">Get in Touch</h2>
+                <form class="contact__form">
+                    <label for="name" class="contact__label">Name</label>
+                    <input type="text" id="name" class="contact__input" required>
+                    <label for="email" class="contact__label">Email</label>
+                    <input type="email" id="email" class="contact__input" required>
+                    <label for="phone" class="contact__label">Phone</label>
+                    <input type="tel" id="phone" class="contact__input">
+                    <label for="message" class="contact__label">Message</label>
+                    <textarea id="message" class="contact__textarea" required></textarea>
+                    <button type="submit" class="contact__submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__contact">
+            <p>Contact us: info@company.com | +123 456 7890</p>
+        </div>
+        <div class="footer__social">
+            <a href="#" class="footer__social-icon">Facebook</a>
+            <a href="#" class="footer__social-icon">Twitter</a>
+            <a href="#" class="footer__social-icon">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

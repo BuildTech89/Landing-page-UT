@@ -1,0 +1,267 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.header__nav {
+    margin-right: 20px;
+}
+
+.header__nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__nav-item {
+    margin: 0 10px;
+}
+.header__nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+.header__nav-link:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+.main {
+    padding: 20px;
+}
+
+.home {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home__title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.home__description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.home__button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.home__button:hover {
+    background-color: #575757;
+}
+
+.home__video {
+    display: none;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.projects {
+    margin-top: 40px;
+}
+
+.projects__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.projects__grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.projects__item {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 30%;
+    transition: transform 0.3s;
+}
+
+.projects__item:hover {
+    transform: translateY(-10px);
+}
+
+.projects__item-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.projects__item-description {
+    font-size: 1rem;
+}
+
+.company {
+    margin-top: 40px;
+}
+
+.company__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.company__team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.company__member {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+}
+
+.company__member-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.company__member-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.company__member-description {
+    font-size: 1rem;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+.footer__contact {
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer__social-icon:hover {
+    color: #ff6347;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.contact__info, .contact__form-container {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact__title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact__item {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact__map {
+    margin-top: 20px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.contact__input, .contact__textarea {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact__submit {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact__submit:hover {
+    background-color: #575757;
+}
